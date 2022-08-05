@@ -1,0 +1,47 @@
+
+   .profile {
+    margin: 0;
+    width: 800px;
+   }
+
+   .description {
+     text-align: center;
+
+    width: 240px;
+    border: 1px solid #000;
+   }
+
+   .avatar {
+      padding: auto;
+
+   border-radius: 50%;
+    border: solid grey 1px;
+    width: 120px;
+   }
+
+   .name {
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    list-style: none;
+   }
+
+   .tag {
+    display: block;
+    list-style: none;
+   }
+
+   .location {
+    display: block;
+    list-style: none;
+   }
+
+   .stats {
+    display: flex;
+    list-style: none;
+   }
+
+   .label {
+    font-size: 20px;
+    font-weight: 900;
+   }

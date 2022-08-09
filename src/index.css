@@ -5,43 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e4e9f0e2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-/* .container {
-  width: 600px
-};
-.user {
-  width: 200px
-};
-.user-item {
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
   list-style: none;
-};
-.user__item--photo {
-border: 1px solid #0000;
-};
-.user__item--name {
-  font-size: large;
-};
-.user__item--tag {
-  font-size: medium;
-};
-.user__item--location {
-  font-size: small;
-};
-.user-stats {
-  display: flex;
-};
-.user__stats--folowers {
-  font-size: small;
-};
-.user__stats--views {
-  font-size: small;
-};
-.user__stats--likes {
-  font-size: small;
-}; */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  background-color: gainsboro;
+}

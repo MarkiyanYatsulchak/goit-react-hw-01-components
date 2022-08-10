@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
+import itemRandomColor from '../../helpers/RandomColor';
 
 export default function Statistics(props) {
   const { title, stats } = props;
@@ -20,10 +21,6 @@ export default function Statistics(props) {
       </ul>
     </section>
   );
-}
-
-function itemRandomColor() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 Statistics.propTypes = {

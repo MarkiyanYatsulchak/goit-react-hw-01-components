@@ -7,9 +7,7 @@ export default function Profile(props) {
     userTagName,
     userLocation,
     avatar,
-    followersStats,
-    viewsStats,
-    likesStats,
+    stats: { followers, views, likes },
   } = props;
   return (
     <div className={style.profile}>
@@ -26,21 +24,21 @@ export default function Profile(props) {
             Followers
             <br />
           </span>
-          <span className={style.quantity}>{followersStats}</span>
+          <span className={style.quantity}>{followers}</span>
         </li>
         <li className={style.statsItem}>
           <span className={style.label}>
             Views
             <br />
           </span>
-          <span className={style.quantity}>{viewsStats}</span>
+          <span className={style.quantity}>{views}</span>
         </li>
         <li className={style.statsItem}>
           <span className={style.label}>
             Likes
             <br />
           </span>
-          <span className={style.quantity}>{likesStats}</span>
+          <span className={style.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
@@ -48,11 +46,13 @@ export default function Profile(props) {
 }
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  username: PropTypes.string,
-  userTagName: PropTypes.string,
-  userLocation: PropTypes.string,
-  followersStats: PropTypes.number,
-  viewsStats: PropTypes.number,
-  likesStats: PropTypes.number,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
